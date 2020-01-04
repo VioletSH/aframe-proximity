@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aframe Proximity Example</title>
+    <script type="module" src="index.js"></script>
+</head>
+<body>
+    <a-scene id="scene">
+        <a-box color="red" id="red" position="-10 2 -10" animation="property: position; to: 5 2 -10; dur: 1000; easing: easeInQuad; dir: alternate; loop: true"></a-box>
+        <a-box color="blue" id="blue" position="10 2 -10" proximity="target:#red;drawLine:true;distance:10"></a-box>
+        <a-camera></a-camera>
+    </a-scene>
+    <script>
+        let red = document.getElementById('red')
+        let blue = document.getElementById('blue')
+        document.getElementById('scene').addEventListener('proximity-event',(e)=>{
+            var type = e.detail.type
+            if(type==='selected'){
+                red.setAttribute('color','lime')
+            }
+            else{
+                red.setAttribute('color','red')
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "aframe-proximity",
+  "version": "1.0.1",
+  "description": " A proximity detector component for Aframe that triggers an event when the distance between two entities is the established",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VioletSH/aframe-proximity.git"
+  },
+  "keywords": [
+    "aframe",
+    "3d",
+    "cardboard",
+    "components",
+    "three",
+    "vr",
+    "webvr",
+    "proximity",
+    "distance",
+    "aframe-component"
+  ],
+  "author": "Erik Fernando Loaiza Patiño",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VioletSH/aframe-proximity/issues"
+  },
+  "homepage": "https://github.com/VioletSH/aframe-proximity#readme",
+  "dependencies": {
+    "aframe": "^1.0.3"
+  }
+}
