@@ -28,7 +28,5 @@
     "url": "https://github.com/VioletSH/aframe-proximity/issues"
   },
   "homepage": "https://github.com/VioletSH/aframe-proximity#readme",
-  "dependencies": {
-    "aframe": "^1.0.3"
-  }
+  "dependencies": {}
 }

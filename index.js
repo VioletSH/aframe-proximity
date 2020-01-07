@@ -1,6 +1,5 @@
-import './node_modules/aframe/dist/aframe.js'
-
-AFRAME.registerComponent("proximity", {
+if(typeof AFRAME !== 'undefined'){
+  AFRAME.registerComponent("proximity", {
     schema: {
       target: { type: "selector" },
       distance: { type: "number", default: 1 },
@@ -78,3 +77,7 @@ AFRAME.registerComponent("proximity", {
       }
     }
   });
+}
+else{
+  console.warn('WARNING: import AFRAME by CDN or npm module (npm install aframe)')
+}
